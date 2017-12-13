@@ -5,6 +5,7 @@ A bunch of tools for handling the MDX music format (music for the Sharp X68000 u
 
 These tools are aimed at the large collections of MDX files available online (see below for download links). They are meant to convert to other formats, such as vgm, midi and for the curious, MML and dumping the raw MDX data.
 
+* libmdx - library of tools for handling the MDX music format
 * mdx2vgm (WIP) - convert to VGM format
 * mdxdump - dump all the information in a MDX file.
 * mdxstat - analyze and print out some statistics and totals about given MDX files.
@@ -30,13 +31,14 @@ Windows:
 
 * Winamp plugin (source available): http://www.vesta.dti.ne.jp/~tsato/soft_sound.html
 * Foobar2000 plugin: http://www.vesta.dti.ne.jp/~tsato/soft_fb2k.html
+* Hoot: http://dmpsoft.s17.xrea.com/hoot/index.html
 * MXV, MXDRVg.dll, X68Sound.dll (sources available): http://gorry.haun.org/mx/index_e.html
 * MDXWin: http://www.pat.hi-ho.ne.jp/sata68/mdxwin.html#mdxwin
 * KbMedia Player: http://hwm5.gyao.ne.jp/kobarin/
 
 Unix:
 
-* [MDXPlay](http://homepage3.nifty.com/StudioBreeze/software/mdxplay-e.html), command line player ([mirror](http://vgmrips.net/mirror/mdxplay-20070206.tar.gz))
+* MDXPlay (command line player): http://homepage3.nifty.com/StudioBreeze/software/mdxplay-e.html
 
 X68000:
 
