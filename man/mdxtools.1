@@ -1,0 +1,77 @@
+.TH mdxtools 1 "4 Nov 2014" "0.1-alpha" "User Manual"
+.SH NAME
+mdxtools
+.SH DESCRIPTION
+A bunch of tools for handling the MDX music format (music for the Sharp X68000 using the MXDRV sound driver).
+.PP
+These tools are aimed at the large collections of MDX files available online (see below for download links). They are meant to convert to other formats, such as vgm, midi and for the curious, MML and dumping the raw MDX data.
+.SH TOOLS
+.TP
+mdx2vgm (WIP)
+convert to VGM format
+.TP
+mdxdump
+dump all the information in a MDX file.
+.TP
+mdxstat
+analyze and print out some statistics and totals about given MDX files.
+.TP
+mdx2mml
+a MML decompiler
+.TP
+mdx2midi (WIP)
+a MML to MIDI file converter. Use in conjunction with pdx2sf2 to hear the samples too.
+.TP
+mididump
+Dump all the info and events in a .mid file. Useful for development. You can also use MidiPiano for a GUI version.
+.TP
+mdx2opm (WIP)
+Extract OPM voices from MDX file (usable in [VOPM](http://www.geocities.jp/sam_kb/VOPM/)).
+.TP
+pdx2wav
+extract the samples from a PDX file, into 16-bit WAV files.
+.TP
+pdx2sf2
+generate a SoundFont file with the samples from the PDX file. Useful for importing a song into a DAW.
+.PP
+The rest of this document is work in progress.
+.PP
+.SH MUSIC
+Download music library
+.IP \(bu 3
+Neko's collection with >28k songs http://nfggames.com/X68000/Music/MXDRV_Neko68k.rar
+.IP \(bu 3
+Another collection (to open, use [DiskExplorer](http://hp.vector.co.jp/authors/VA013937/editdisk/index_e.html)) http://nfggames.com/forum2/index.php?topic=4813.0
+.PP
+.SH About MML (Music Macro Language)
+MML is a text format, containing sound commands similar to MDX and to MIDI as well.
+.IP \(bu 3
+MML resources & compilers: http://woolyss.com/chipmusic-mml.php
+.IP \(bu 3
+MML description for MXDRV (japanese): http://www16.atwiki.jp/mxdrv/pages/19.html
+.IP \(bu 3
+Another MML description: http://www.geocities.co.jp/Playtown-Denei/9628/mck/mckc-e.txt
+.PP
+Compiling MML files to MDX files: Get run68 from http://sourceforge.jp/projects/sfnet_run68/ , then get MDX_TOOL.lzh from http://nfggames.com/x68000/Mirrors/x68pub/x68tools/SOUND/MXDRV/ . Unpack the lzh file in the same folder as run68, then open a command prompt, navigate to the run68 folder, and run `run68.exe mxc.x <file.mml>` .
+.PP
+Decompiling: Similar procedure, but get DMDX from DMDX.lzh.
+.PP
+
+.SH Other tools and resources
+.IP \(bu 3
+mdxpg (convert to MIDI): http://www.geocities.jp/sam_kb/VOPM/MDXPG/index.html
+.IP \(bu 3
+nfggames x68000 file archive: http://nfggames.com/x68000/
+.IP \(bu 3
+especially the tools here (see MDX_TOOL.lzh) http://nfggames.com/x68000/Mirrors/x68pub/x68tools/SOUND/MXDRV/
+.PP
+.SH File formats
+.IP \(bu 3
+[MML]
+.IP \(bu 3
+[MDX]
+.IP \(bu 3
+[PDX]
+.PP
+.SH SEE ALSO
+ mdxplay(1)
